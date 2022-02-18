@@ -1,0 +1,181 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['21']
+
+Transitions table :
+            *    a    b    c
+→0      10, 1
+10   11, 1, 5
+1        2, 6
+2        3, 5
+6                7
+3                     4
+5           8
+4        3, 5
+8                          9
+7           8
+9         ←21
+←21
+11   12, 1, 4
+15                   16
+12              13
+14         17
+13   12, 1, 4
+17   18, 2, 0
+16         17
+18                        19
+20        ←21
+19   18, 2, 0
+➞ This is an asynchronous automaton because of the transition ['0', '*', '10']
+
+🠗 Determinization and Completion of an Asynchronous Automata 🠗
+
+Initial state(s) : ['0', '10', '11', '12', '1', '14', '6', '15', '17', '20', '2', '21', '5', '18', '8', '3']
+Final state(s)  :  ['21']
+
+Transitions table :
+         a     b     c
+→0    13+7  16+4  19+9
+13+7
+16+4
+19+9
+→10     13    16    19
+13      13          19
+16                  19
+19                  19
+→1       7     4     9
+4              4     9
+7                    9
+9
+→2             4     9
+→6       7
+→3             4
+→5                   9
+→8                   9
+→11     13          19
+→15           16
+→12     13
+→14                 19
+→17                 19
+→18                 19
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0+10+11+12+1+14+6+15+17+20+2+21+5+18+8+3']
+Final state(s)  :  ['21', '0+10+11+12+1+14+6+15+17+20+2+21+5+18+8+3']
+
+Transitions table :
+                                                    a          b          c
+←→0+10+11+12+1+14+6+15+17+20+2+21+5+18+8+3  13+13+7+7  16+16+4+4  19+19+9+9
+13+13+7+7                                          13          P       19+9
+16+16+4+4                                           P          4       19+9
+19+19+9+9                                           P          P         19
+13                                                 13          P         19
+19+9                                                P          P         19
+4                                                   P          4          9
+19                                                  P          P         19
+9                                                   P          P          P
+P                                                   P          P          P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['0']
+
+Transitions table :
+   a  b  c
+1  1  1  1
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: abc
+The word : abc is not recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: a
+The word : a is not recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: *
+The empty word is recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['0+10+11+12+1+14+6+15+17+20+2+21+5+18+8+3']
+Final state(s)  :  ['13+13+7+7', '16+16+4+4', '19+19+9+9', '13', '19+9', '4', '19', '9', 'P']
+
+Transitions table :
+                                                    a           b           c
+→0+10+11+12+1+14+6+15+17+20+2+21+5+18+8+3  ←13+13+7+7  ←16+16+4+4  ←19+19+9+9
+←13+13+7+7                                        ←13          ←P       ←19+9
+←16+16+4+4                                         ←P          ←4       ←19+9
+←19+19+9+9                                         ←P          ←P         ←19
+←13                                               ←13          ←P         ←19
+←19+9                                              ←P          ←P         ←19
+←4                                                 ←P          ←4          ←9
+←19                                                ←P          ←P         ←19
+←9                                                 ←P          ←P          ←P
+←P                                                 ←P          ←P          ←P
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: *
+The empty word is not recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: abc
+The word : abc is recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['13+13+7+7', '16+16+4+4', '19+19+9+9', '13', '19+9', '4', '19', '9', 'P']
+
+Transitions table :
+                                                   a           b           c
+0+10+11+12+1+14+6+15+17+20+2+21+5+18+8+3  ←13+13+7+7  ←16+16+4+4  ←19+19+9+9
+←13+13+7+7                                       ←13          ←P       ←19+9
+←16+16+4+4                                        ←P          ←4       ←19+9
+←19+19+9+9                                        ←P          ←P         ←19
+←13                                              ←13          ←P         ←19
+←19+9                                             ←P          ←P         ←19
+←4                                                ←P          ←4          ←9
+←19                                               ←P          ←P         ←19
+←9                                                ←P          ←P          ←P
+←P                                                ←P          ←P          ←P
+→i                                        ←13+13+7+7  ←16+16+4+4  ←19+19+9+9
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: abc
+The word : abc is recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: a
+The word : a is recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: *
+The empty word is not recognized
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c']: end

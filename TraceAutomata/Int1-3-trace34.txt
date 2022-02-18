@@ -1,0 +1,123 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['6']
+
+Transitions table :
+        *    a    b
+→0   1, 4
+1       2    2
+4                 5
+2                 3
+3   2, ←6
+←6
+5   4, ←6
+➞ This is an asynchronous automaton because of the transition ['0', '*', '1']
+
+🠗 Determinization and Completion of an Asynchronous Automata 🠗
+
+Initial state(s) : ['0', '1', '2', '4']
+Final state(s)  :  ['6']
+
+Transitions table :
+       a    b
+→0     2  3+5
+→2          3
+3+5
+→1     2    3
+3           3
+→4          5
+5           5
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0+1+2+4']
+Final state(s)  :  ['6']
+
+Transitions table :
+          a        b
+→0+1+2+4  2  3+3+5+5
+2         P        3
+3+3+5+5   P      3+5
+3         P        3
+3+5       P      3+5
+P         P        P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0']
+
+Transitions table :
+    a  b
+→1  1  1
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end  
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['0+1+2+4']
+Final state(s)  :  ['0+1+2+4', '2', '3+3+5+5', '3', '3+5', 'P']
+
+Transitions table :
+            a         b
+←→0+1+2+4  ←2  ←3+3+5+5
+←2         ←P        ←3
+←3+3+5+5   ←P      ←3+5
+←3         ←P        ←3
+←3+5       ←P      ←3+5
+←P         ←P        ←P
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['0+1+2+4', '2', '3+3+5+5', '3', '3+5', 'P', 'i']
+
+Transitions table :
+           a         b
+←0+1+2+4  ←2  ←3+3+5+5
+←2        ←P        ←3
+←3+3+5+5  ←P      ←3+5
+←3        ←P        ←3
+←3+5      ←P      ←3+5
+←P        ←P        ←P
+←→i       ←2  ←3+3+5+5
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end

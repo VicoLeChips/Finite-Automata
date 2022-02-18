@@ -1,0 +1,126 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['4']
+
+Transitions table :
+    a    b    d    c
+0   0
+→1  1    2   ←4    3
+2   0    2   ←4    3
+←4  0    0   ←4    0
+3   0    0   ←4    3
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is not a complete automaton because there are no transition for each symbols in the state :  0
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['4']
+
+Transitions table :
+    a  b  c   d
+0   0  P  P   P
+→1  1  2  3  ←4
+2   0  2  3  ←4
+←4  0  0  0  ←4
+3   0  0  3  ←4
+P   P  P  P   P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['3']
+
+Transitions table :
+    b  c  a   d
+0   0  4  2  ←3
+4   2  4  2  ←3
+2   2  2  2   2
+←3  2  2  2  ←3
+→1  0  4  1  ←3
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: abc
+The word : abc is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ddd
+The word : ddd is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0', '1', '2', '3', 'P']
+
+Transitions table :
+      a   b   c   d
+←0   ←0  ←P  ←P  ←P
+←→1  ←1  ←2  ←3   4
+←2   ←0  ←2  ←3   4
+4    ←0  ←0  ←0   4
+←3   ←0  ←0  ←3   4
+←P   ←P  ←P  ←P  ←P
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['0', '1', '2', '3', 'P', 'i']
+
+Transitions table :
+      a   b   c   d
+←0   ←0  ←P  ←P  ←P
+←1   ←1  ←2  ←3   4
+←2   ←0  ←2  ←3   4
+4    ←0  ←0  ←0   4
+←3   ←0  ←0  ←3   4
+←P   ←P  ←P  ←P  ←P
+←→i  ←1  ←2  ←3   4
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end

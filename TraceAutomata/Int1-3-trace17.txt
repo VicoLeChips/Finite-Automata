@@ -1,0 +1,135 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['1', '2', '3', '4']
+Final state(s)  :  ['5']
+
+Transitions table :
+       a     b     c      d
+→1  1, 2
+→2        2, 3
+→3              3, 4
+→4                    4, ←5
+←5     0     0     0      0
+0
+➞ This is not an asynchronous automaton
+➞ This is not a deterministic automaton
+
+🠗 Determinizarion and Completion of a Synchronous Automata 🠗
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1+2+3+4']
+Final state(s)  :  ['5', '4+5', '0+4+5']
+
+Transitions table :
+            a    b    c       d
+→1+2+3+4  1+2  2+3  3+4    ←4+5
+1+2       1+2  2+3    P       P
+2+3         P  2+3  3+4       P
+3+4         P    P  3+4    ←4+5
+←4+5        0    0    0  ←0+4+5
+0           P    P    P       P
+←0+4+5      0    0    0  ←0+4+5
+P           P    P    P       P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['4']
+
+Transitions table :
+      a    b    c    d
+→0    1    5    3   ←4
+1     1    5    2    2
+5     2    5    3    2
+3     2    2    3   ←4
+←4
+2     2    2    2    2
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: abcd
+The word : abcd is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: abc
+The word : abc is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['1+2+3+4']
+Final state(s)  :  ['1+2+3+4', '1+2', '2+3', '3+4', '0', 'P']
+
+Transitions table :
+              a     b     c      d
+←→1+2+3+4  ←1+2  ←2+3  ←3+4    4+5
+←1+2       ←1+2  ←2+3    ←P     ←P
+←2+3         ←P  ←2+3  ←3+4     ←P
+←3+4         ←P    ←P  ←3+4    4+5
+4+5          ←0    ←0    ←0  0+4+5
+←0           ←P    ←P    ←P     ←P
+0+4+5        ←0    ←0    ←0  0+4+5
+←P           ←P    ←P    ←P     ←P
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: abc
+The word : abc is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['1+2+3+4', '1+2', '2+3', '3+4', '0', 'P', 'i']
+
+Transitions table :
+             a     b     c      d
+←1+2+3+4  ←1+2  ←2+3  ←3+4    4+5
+←1+2      ←1+2  ←2+3    ←P     ←P
+←2+3        ←P  ←2+3  ←3+4     ←P
+←3+4        ←P    ←P  ←3+4    4+5
+4+5         ←0    ←0    ←0  0+4+5
+←0          ←P    ←P    ←P     ←P
+0+4+5       ←0    ←0    ←0  0+4+5
+←P          ←P    ←P    ←P     ←P
+←→i       ←1+2  ←2+3  ←3+4    4+5
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: abc
+The word : abc is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end

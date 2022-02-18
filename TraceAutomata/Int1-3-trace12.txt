@@ -1,0 +1,112 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['1']
+
+Transitions table :
+       b    d    a    c
+0      0   ←1
+←→1             ←1    0
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is not a complete automaton because there are no transition for each symbols in the state :  0
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['1']
+
+Transitions table :
+     b   d   a  c
+0    0  ←1   P  P
+←→1  P   P  ←1  0
+P    P   P   P  P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['1']
+
+Transitions table :
+     b   d   a  c
+0    0  ←1   2  2
+←→1  2   2  ←1  0
+2    2   2   2  2
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: a
+The word : a is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0', 'P']
+
+Transitions table :
+     b   d   a   c
+←0  ←0   1  ←P  ←P
+→1  ←P  ←P   1  ←0
+←P  ←P  ←P  ←P  ←P
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['0', 'P']
+
+Transitions table :
+     b   d   a   c
+←0  ←0   1  ←P  ←P
+1   ←P  ←P   1  ←0
+←P  ←P  ←P  ←P  ←P
+→i  ←P  ←P   1  ←0
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: a
+The word : a is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end

@@ -1,0 +1,107 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0']
+
+Transitions table :
+      a   b
+←0   ←0  ←0
+→1    2   2
+2        ←0
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is not a complete automaton because there are no transition for each symbols in the state :  2
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0']
+
+Transitions table :
+     a   b
+←0  ←0  ←0
+→1   2   2
+2    P  ←0
+P    P   P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['2']
+
+Transitions table :
+     a   b
+→0   3   3
+3    1  ←2
+1    1   1
+←2  ←2  ←2
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['1', '2', 'P']
+
+Transitions table :
+      a   b
+0     0   0
+←→1  ←2  ←2
+←2   ←P   0
+←P   ←P  ←P
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['1', '2', 'P', 'i']
+
+Transitions table :
+      a   b
+0     0   0
+←1   ←2  ←2
+←2   ←P   0
+←P   ←P  ←P
+←→i  ←2  ←2
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end

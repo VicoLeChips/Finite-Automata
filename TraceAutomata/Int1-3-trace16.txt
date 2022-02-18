@@ -1,0 +1,134 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0']
+
+Transitions table :
+       a     b     c      d
+→1  1, 2
+2         2, 3
+3               3, 4
+4                     4, ←0
+←0
+➞ This is not an asynchronous automaton
+➞ This is not a deterministic automaton
+
+🠗 Determinizarion and Completion of a Synchronous Automata 🠗
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0', '0+4']
+
+Transitions table :
+        a    b    c     d
+→1    1+2    P    P     P
+1+2   1+2  2+3    P     P
+2+3     P  2+3  3+4     P
+3+4     P    P  3+4  ←0+4
+←0+4    P    P    P  ←0+4
+P       P    P    P     P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['4']
+
+Transitions table :
+      a    b    c    d
+→0    2    1    1    1
+2     2    3    1    1
+1     1    1    1    1
+3     1    3    5    1
+5     1    1    5   ←4
+←4
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: abcd
+The word : abcd is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is not recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['1', '1+2', '2+3', '3+4', 'P']
+
+Transitions table :
+         a     b     c    d
+←→1   ←1+2    ←P    ←P   ←P
+←1+2  ←1+2  ←2+3    ←P   ←P
+←2+3    ←P  ←2+3  ←3+4   ←P
+←3+4    ←P    ←P  ←3+4  0+4
+0+4     ←P    ←P    ←P  0+4
+←P      ←P    ←P    ←P   ←P
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab 
+The word : ab is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['1', '1+2', '2+3', '3+4', 'P', 'i']
+
+Transitions table :
+         a     b     c    d
+←1    ←1+2    ←P    ←P   ←P
+←1+2  ←1+2  ←2+3    ←P   ←P
+←2+3    ←P  ←2+3  ←3+4   ←P
+←3+4    ←P    ←P  ←3+4  0+4
+0+4     ←P    ←P    ←P  0+4
+←P      ←P    ←P    ←P   ←P
+←→i   ←1+2    ←P    ←P   ←P
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: ab
+The word : ab is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: *
+The empty word is recognized
+
+
+
+
+➞ Please enter a word in the alphabet : ['a', 'b', 'c', 'd']: end

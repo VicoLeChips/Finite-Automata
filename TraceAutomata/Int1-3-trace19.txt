@@ -1,0 +1,85 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0']
+
+Transitions table :
+     a
+←0  ←0
+→1   2
+2   ←0
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is a complete automaton
+
+➞ Your automata is already complete ! 🠔
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['0']
+
+Transitions table :
+     a
+←0  ←0
+→1   2
+2   ←0
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['1']
+
+Transitions table :
+     a
+→0   2
+2   ←1
+←1  ←1
+
+➞ Please enter a word in the alphabet : ['a']: a
+The word : a is not recognized
+
+➞ Please enter a word in the alphabet : ['a']: *
+The empty word is not recognized
+
+➞ Please enter a word in the alphabet : ['a']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['1']
+Final state(s)  :  ['1', '2']
+
+Transitions table :
+      a
+0     0
+←→1  ←2
+←2    0
+
+➞ Please enter a word in the alphabet : ['a']: a
+The word : a is recognized
+
+➞ Please enter a word in the alphabet : ['a']: *
+The empty word is recognized
+
+➞ Please enter a word in the alphabet : ['a']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['1', '2', 'i']
+
+Transitions table :
+      a
+0     0
+←1   ←2
+←2    0
+←→i  ←2
+
+➞ Please enter a word in the alphabet : ['a']: a
+The word : a is recognized
+
+➞ Please enter a word in the alphabet : ['a']: end

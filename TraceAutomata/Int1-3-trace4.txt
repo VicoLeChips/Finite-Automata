@@ -1,0 +1,33 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  []
+
+Transitions table :
+      a
+→0    1
+1
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is not a complete automaton because there are no transition for each symbols in the state :  1
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  []
+
+Transitions table :
+    a
+→0  1
+1   P
+P   P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+Traceback (most recent call last):
+  File "d:/OneDrive - Efrei/Project-Finite-Automata/main.py", line 70, in <module>
+    MCDFA = CDFA.minimization()
+  File "d:\OneDrive - Efrei\Project-Finite-Automata\FA.py", line 451, in minimization
+    if (state[0] in self.dico_E):
+IndexError: list index out of range

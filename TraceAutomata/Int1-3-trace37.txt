@@ -1,0 +1,124 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['0', '1', '2', '3', '4']
+
+Transitions table :
+       b    a
+←→0   ←3   ←1
+←3    ←0   ←1
+←1    ←4   ←2
+←4         ←1
+←2    ←0
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is not a complete automaton because there are no transition for each symbols in the state :  4
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['0', '1', '2', '3', '4']
+
+Transitions table :
+      b   a
+←→0  ←3  ←1
+←3   ←0  ←1
+←1   ←4  ←2
+←4    P  ←1
+←2   ←0   P
+P     P   P
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['0', '2', '1', '3']
+
+Transitions table :
+      b   a
+←→0  ←0  ←2
+←2   ←3  ←1
+←1   ←0   4
+4     4   4
+←3    4  ←2
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: aabb
+The word : aabb is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['P']
+
+Transitions table :
+     b   a
+→0   3   1
+3    0   1
+1    4   2
+4   ←P   1
+2    0  ←P
+←P  ←P  ←P
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: aa
+The word : aa is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['P']
+
+Transitions table :
+     b   a
+0    3   1
+3    0   1
+1    4   2
+4   ←P   1
+2    0  ←P
+←P  ←P  ←P
+→i   3   1
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end

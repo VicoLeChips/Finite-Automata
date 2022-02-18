@@ -1,0 +1,114 @@
+🠗 You have chosen the following automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['1', '2', '3', '4']
+
+Transitions table :
+     a   b
+→0  ←1  ←4
+←1  ←2  ←3
+←4   5   5
+←2  ←2  ←3
+←3   5   5
+5    5   5
+➞ This is not an asynchronous automaton
+➞ This is a deterministic automaton
+➞ This is a complete automaton
+
+➞ Your automata is already complete ! 🠔
+
+
+🠗 Your Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['1', '2', '3', '4']
+
+Transitions table :
+     a   b
+→0  ←1  ←4
+←1  ←2  ←3
+←4   5   5
+←2  ←2  ←3
+←3   5   5
+5    5   5
+
+
+🠗 Your Minimized Complete Deterministic Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['1', '2']
+
+Transitions table :
+     a   b
+→0  ←1  ←2
+←1  ←1  ←2
+←2   3   3
+3    3   3
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: a
+The word : a is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your complementary Finite Automata 🠗
+
+Initial state(s) : ['0']
+Final state(s)  :  ['0', '5']
+
+Transitions table :
+      a   b
+←→0   1   4
+1     2   3
+4    ←5  ←5
+2     2   3
+3    ←5  ←5
+←5   ←5  ←5
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
+
+
+🠗 Your standard Finite Automata 🠗
+
+Initial state(s) : ['i']
+Final state(s)  :  ['0', '5', 'i']
+
+Transitions table :
+      a   b
+←0    1   4
+1     2   3
+4    ←5  ←5
+2     2   3
+3    ←5  ←5
+←5   ←5  ←5
+←→i   1   4
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: *
+The empty word is recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: ab
+The word : ab is not recognized
+
+
+➞ Please enter a word in the alphabet : ['a', 'b']: end
